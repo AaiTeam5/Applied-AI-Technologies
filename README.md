@@ -4,15 +4,43 @@ Repo for the lecture "Applied Artificial Intelligence" at the University of Appl
 
 Check out the Applied-AI [Wiki](https://github.com/MrDio/Applied-AI-Technologies/wiki) for detailed Information. First start with the chapters and intro to NN and DL.
 
-[Chapter0: Intro Lecture and AIM](https://github.com/MrDio/Applied-AI-Technologies/wiki)</br>
-[Chapter1: Neuronal Networks and Deep Learning](https://github.com/MrDio/Smartphone-Sensing-Framework/wiki/Neuronal-Networks-&-Deep-Learning)</br>
-[Chapter2: Deep Dive Applied AI with RPI3 and Movidius](https://github.com/MrDio/Applied-AI-Technologies/wiki/2.-AI-on-the-Raspberry-Pi-with-the-Movidius-Neural-Compute-Stick)</br>
-[Chapter3: Deep Dive Applied AI with Smartphone Sensing Framework and TF for Mobile](https://github.com/MrDio/Applied-AI-Technologies/wiki/1.-AI-on-Smartphone-Sensing)</br>
+# Human-Detection-AAI
+Human Detection für the Module AAI 
+
+Needed Hardware
+1. Raspberry 3 
+2. PiCam 
+3. Intel Compute Stick
+
+Needed Packete 
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute StickShell
+$ sudo apt-get install build-essential cmake unzip pkg-config
+ 
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute Stick
+$ sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+$ sudo apt-get install libxvidcore-dev libx264-dev
+
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute StickShell
+$ sudo apt-get install libgtk-3-dev
+
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute StickShell
+$ sudo apt-get install libcanberra-gtk*
+
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute StickShell
+$ sudo apt-get install libatlas-base-dev gfortran
+
+Installing OpenVINO on the Raspberry Pi and performing object detection with the Movidius Neural Compute StickShell
+$ sudo apt-get install python3-dev
 
 
-[Appendix: Intro into Deep Reinforcement Learning Technologies](https://sites.google.com/view/deep-rl-bootcamp/lectures)</br>
-[Appendix: Hackster.io Respected Project Autonomous driving ai](https://www.hackster.io/dhq/autonomous-driving-ai-for-donkey-car-garbage-collector-846c11)</br>
-[Appendix: Github.com Respected Project Android AI Car](https://github.com/umadbro96/androidAICar)</br>
+
+
+Command to run the human detector
+$ python3 openvino_real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt \--model MobileNetSSD_deploy.caffemodel
+
+Source: https://www.pyimagesearch.com/2019/04/08/openvino-opencv-and-movidius-ncs-on-the-raspberry-pi/
+
 
 Thanks to our contributors:
 </br>
